@@ -275,8 +275,8 @@ nav .search-icon {
     .bangla-section{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        height: 50px;
-        
+        height: 60px;
+        padding: 10px;
     }
     .bangla-section li a{
         font-size: 12px;
