@@ -45,6 +45,16 @@
 }
 /* ------------------------- RESPONSIVE ------------------------- */
 
+@media (max-width: 1380px) {
+    .right-side-img{
+        height: 300px;
+    }
+}
+@media (max-width: 1380px) {
+    .right-side-img{
+        height: 220px;
+    }
+}
 @media (max-width: 680px) {
     .main-section{
         flex-direction: column;
@@ -60,5 +70,7 @@
     }
     .right-side-img{
         margin-left: 10px;
+        width: 120px;
+        height: 120px;
     }
 }
