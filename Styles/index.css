@@ -1,0 +1,64 @@
+/* ----------------------------------- Fonts Link ----------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Open+Sans&family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+.main-section{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+/* ------------------------- LEFT SIDE ------------------------- */
+.left-side{
+    text-align: center;
+    width: 90%;
+}
+.left-side-title{
+    font-size: 30px;
+    font-weight: 900;
+    color: #000;
+}
+.left-side-text{
+    margin-top: 10px;
+    color: #0000009a;
+    font-weight: 700;
+}
+.left-side-img{
+    margin-top: 10px;
+    width: 80%;
+}
+
+/* ------------------------- RIGHT SIDE ------------------------- */
+.right-side{
+    width: 30%;
+}
+.right-side-img{
+    width: 90%;
+    margin-bottom: 10px;
+}
+/* ------------------------- RESPONSIVE ------------------------- */
+
+@media (max-width: 680px) {
+    .main-section{
+        flex-direction: column;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .left-side-title{
+        font-size: 20px;
+    }
+    .right-side{
+        width: 100%;
+    }
+    .right-side-img{
+        margin-left: 10px;
+        height: 400px;
+    }
+}

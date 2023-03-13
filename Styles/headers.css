@@ -271,6 +271,7 @@ nav .search-icon {
     padding: 5px;
     border-radius: 5px;
 }
+/* ------------------------- RESPONSIVE ------------------------- */
 @media (max-width: 680px) {
     .bangla-section{
         display: grid;
@@ -281,5 +282,4 @@ nav .search-icon {
     .bangla-section li a{
         font-size: 12px;
     }
-
 }
