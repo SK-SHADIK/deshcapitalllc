@@ -243,3 +243,43 @@ nav .search-icon {
     }
 
 }
+
+/* -----------------------------------  BANGLA SECTION -----------------------------------  */
+.bangla{
+    background: linear-gradient(145deg, #90EE90, #F1E5AC);
+    margin-top: 5px;
+}
+.bangla-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 35px;
+}
+.bangla-section li{
+    list-style: none;
+}
+.bangla-section li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    padding: 5px;
+}
+.bangla-section li a:hover{
+    color: #e63600;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+@media (max-width: 680px) {
+    .bangla-section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 50px;
+        
+    }
+    .bangla-section li a{
+        font-size: 12px;
+    }
+
+}
