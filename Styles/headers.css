@@ -8,8 +8,34 @@
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
 }
+.top-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(145deg, #90EE90, #F1E5AC);
+    height: 30px;
+}
+.top-section-title{
+    font-size: 20px;
+}
+.icons{
+    display: flex;
+}
+.icons li{
+    list-style: none;
+}
+.icons li a{
+    text-decoration: none;
+    border: 2px solid #e63600;
+    margin-right: 5px;
+    padding: 2px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+/* ----------------------------------- Nav Bar ----------------------------------- */
 
 nav {
+    margin-top: 2px;
     background: linear-gradient(145deg, #F1E5AC, #90EE90);
     display: flex;
     align-items: center;
