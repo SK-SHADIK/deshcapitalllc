@@ -54,115 +54,75 @@ nav {
     background: linear-gradient(145deg, #F1E5AC, #90EE90);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 80px;
     padding: 0 100px;
 }
 
 nav .logo {
     height: 60px;
-    width: 100px;
+    width: 80px;
 }
 
 nav .logo img {
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
 
-nav .nav-items ul {
+nav .nav-bar ul {
     display: flex;
-    flex: 1;
-    padding: 0 0 0 40px;
 }
 
-nav .nav-items li {
+nav .nav-bar li {
     list-style: none;
     padding: 0 15px;
 }
 
-nav .nav-items li a {
+nav .nav-bar li a {
     color: #000;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 900;
     text-decoration: none;
 }
 
-nav .nav-items li a:hover {
-    color: #e63600;
+nav .nav-bar li a:hover {
+    color: #0c490cf2;
     background: #fff;
     padding: 5px;
     border-radius: 5px;
 }
 
-nav .nav-items li a.active {
-    color: #e63600;
+nav .nav-bar li a.active {
+    color: #0c490cf2;
     background: #fff;
     padding: 5px;
     border-radius: 5px;
 }
-nav .nav-items li a.logactive {
+nav .nav-bar li a.logactive {
     color: #fff;
     background: #000;
     padding: 5px;
     border-radius: 5px;
+    font-weight: 500;
 }
-nav .nav-items li a.logactive:hover{
+nav .nav-bar li a.logactive:hover{
     color: #000;
     background: #fff;
 }
-
-nav form {
-    display: flex;
-    height: 40px;
-    padding: 2px;
-    background: #F1E5AC;
-    min-width: 18% !important;
-    border-radius: 2px;
-    border: 1px solid rgba(155, 155, 155, 0.2);
-}
-
-nav form .search-data {
-    width: 100%;
-    height: 100%;
-    letter-spacing: 1px;
-    padding: 0 10px;
-    color: #000;
-    font-size: 17px;
-    border: none;
-    font-weight: 500;
-    background: none;
-}
-
-nav form button {
-    padding: 0 15px;
-    color: #fff;
-    font-size: 17px;
-    background: #ff3d00;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-nav form button:hover {
-    background: #e63600;
-    border-radius: 10px;
-}
-
 nav .menu-icon,
-nav .cancel-icon,
-nav .search-icon {
+nav .cancel-btn{
     width: 40px;
     text-align: center;
     margin: 0 50px;
     font-size: 18px;
-    color: #fff;
+    color: #0c490cf2;
     cursor: pointer;
     display: none;
 }
 
 nav .menu-icon span,
-nav .cancel-icon,
-nav .search-icon {
+nav .cancel-btn{
     display: none;
 }
 /* ----------------------------------- FOR RESPONSIVE ----------------------------------- */
@@ -187,93 +147,47 @@ nav .search-icon {
         text-align: center;
     }
 
-    nav .nav-items {
+    nav .nav-bar {
         position: fixed;
         z-index: 99;
         top: 150px;
         width: 100%;
         left: -100%;
         height: 100%;
-        padding: 5px 50px 0 50px;
         text-align: center;
         background: linear-gradient(145deg, #F1E5AC, #90EE90);
-        transition: left 0.3s ease;
     }
 
-    nav .nav-items ul {
+    nav .nav-bar ul {
         flex-direction: column;
     }
 
-    nav .nav-items.active {
+    nav .nav-bar.active {
         left: 0px;
     }
 
-    nav .nav-items li {
+    nav .nav-bar li {
         line-height: 20px;
         margin: 10px 0;
     }
 
-    nav .nav-items li a {
+    nav .nav-bar li a {
         font-size: 20px;
-    }
-
-    nav form {
-        position: absolute;
-        top: 80px;
-        right: 50px;
-        opacity: 0;
-        pointer-events: none;
-        transition: top 0.3s ease, opacity 0.1s ease;
-    }
-
-    nav form.active {
-        top: 160px;
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    nav form:before {
-        position: absolute;
-        content: "";
-        top: -13px;
-        right: 0px;
-        width: 0;
-        height: 0;
-        z-index: -1;
-        border: 10px solid transparent;
-        border-bottom-color: #90EE90;
-        margin: -20px 0 0;
-    }
-
-    nav form:after {
-        position: absolute;
-        content: '';
-        height: 60px;
-        padding: 2px;
-        background: #90EE90;
-        border-radius: 2px;
-        min-width: calc(100% + 20px);
-        z-index: -2;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
     }
 
     nav .menu-icon {
         display: block;
     }
 
-    nav .search-icon,
     nav .menu-icon span {
         display: block;
     }
 
-    nav .menu-icon span.hide,
-    nav .search-icon.hide {
+    nav .menu-icon span.hide{
         display: none;
     }
 
-    nav .cancel-icon.show {
+    nav .cancel-btn.show {
         display: block;
     }
     .top-section{
@@ -314,7 +228,7 @@ nav .search-icon {
     padding: 5px;
 }
 .bangla-section li a:hover{
-    color: #e63600;
+    color: #0c490cf2;
     background: #fff;
     padding: 5px;
     border-radius: 5px;
