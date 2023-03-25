@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desh Capital LLC | Home</title>
-    <link rel="shortcut icon" type="image/png" href="./Assets/Images/Logo.jpg">
+    <link rel="shortcut icon" type="image/png" href="Assets/Images/Logo.jpg">
 
     <!-- FONTASOME CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS FILE LINK -->
-    <link rel="stylesheet" href="./Styles/headers.css">
-    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="Styles/headers.css">
+    <link rel="stylesheet" href="Styles/index.css">
 
 
 </head>
@@ -28,7 +30,8 @@
             <div>
                 <ul class="icons">
                     <li><a href="tel:844 337 4227"><i class="fas fa-phone"></i></a></li>
-                    <li><a href="https://www.facebook.com/mlomaruf" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <li><a href="https://www.facebook.com/deshcapitalllc/" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
                     </li>
                     <li><a href="mailto:info@deshcapitalllc.com" target="_blank"><i class="fas fa-envelope"></i></a>
                     </li>
@@ -40,13 +43,14 @@
                 <span class="fas fa-bars"></span>
             </div>
             <div class="logo">
-                <img src="./Assets/Images/Logo.jpg" alt="Loading...">
+                <a href="index.html"><img src="Assets/Images/Logo.jpg" alt="Loading..."></a>
             </div>
             <div class="nav-bar">
                 <ul>
-                    <li><a class="active" href="#">Home</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="#">Calculator</a></li>
                     <li><a href="#">Mortgage Info.</a></li>
+                    <!-- <li><a href="#">Loan Programs</a></li> -->
                     <li><a href="#">Appointment</a></li>
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">About Us</a></li>
@@ -64,7 +68,8 @@
             <ul class="bangla-section">
                 <li><a href="">ক্যালকুলেটর</a></li>
                 <li><a href="">মট্গেজ তথ্য</a></li>
-                <li><a href="">সাক্ষাৎ</a></li>
+                <!-- <li><a href="">লোন সমূহ</a></li> -->
+                <li><a href="">অ্যাপয়েন্টমেন্ট</a></li>
                 <li><a href="">প্রশ্ন ও উত্তর</a></li>
                 <li><a href="">আমরা কারা?</a></li>
                 <li><a href="">যোগাযোগ</a></li>
@@ -82,25 +87,148 @@
             <div>
                 <h1 class="left-side-title">Today's Mortgage Rate <br> ( আজকের মর্টগেজ রিপোর্ট )</h1>
                 <p class="left-side-text">This is today's mortgage rate. For more update see here</p>
-                <img class="left-side-img" src="./Assets/Images/Todays Mortgage Rate.jpg" alt="Loading...">
-            </div>
-        </div>
-        <div class="right-side">
-            <img class="right-side-img" src="./Assets/Images/Adds.jpg" alt="Loading...">
-            <img class="right-side-img" src="./Assets/Images/Adds 2.jpeg" alt="Loading...">
-        </div>
-    </section>
-    <!-- TODAYS MORTGAGE RATE & ADD END -->
-    <!-- SLIDER START -->
-    <section class="slider">
 
+                <div class="card-slider">
+                    <div class="card-slide">
+                        <div class="card">
+                            <h5 class="tm-title">30 Year Fixed</h5>
+                            <p class="tm-txt">6.67%<sub>(Current)</sub></p>
+                            <p class="tm-txt">+0.12%<sub>(1 Day)</sub></p>
+                            <p class="red"><i class="fas fa-arrow-up"></i></p>
+                        </div>
+                    </div>
+                    <div class="card-slide">
+                        <div class="card">
+                            <h5 class="tm-title">15 Year Fixed</h5>
+                            <p class="tm-txt">6.08%<sub>(Current)</sub></p>
+                            <p class="tm-txt">+0.10%<sub>(1 Day)</sub></p>
+                            <p class="red"><i class="fas fa-arrow-up"></i></p>
+                        </div>
+                    </div>
+                    <div class="card-slide">
+                        <div class="card">
+                            <h5 class="tm-title">30 Year FHA</h5>
+                            <p class="tm-txt">6.15%<sub>(Current)</sub></p>
+                            <p class="tm-txt">+0.10%<sub>(1 Day)</sub></p>
+                            <p class="red"><i class="fas fa-arrow-up"></i></p>
+                        </div>
+                    </div>
+                    <div class="card-slide">
+                        <div class="card">
+                            <h5 class="tm-title">30 Year Jumbo</h5>
+                            <p class="tm-txt">6.16%<sub>(Current)</sub></p>
+                            <p class="tm-txt">+0.04%<sub>(1 Day)</sub></p>
+                            <p class="red"><i class="fas fa-arrow-up"></i></p>
+                        </div>
+                    </div>
+                    <div class="card-slide">
+                        <div class="card">
+                            <h5 class="tm-title">5/1 ARM</h5>
+                            <p class="tm-txt">6.14%<sub>(Current)</sub></p>
+                            <p class="tm-txt">-0.21%<sub>(1 Day)</sub></p>
+                            <p class="green"><i class="fas fa-arrow-down"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- TODAYS MORTGAGE RATE & ADD END -->
+
+            <!-- SLIDER START -->
+            <div class="sliders">
+                <div class="slider">
+                    <div class="slide-box fade">
+                        <div class="slide-number">1 / 11</div>
+                        <img src="Assets/Images/Sliders/Slider1.jpg" alt="Loading...">
+                    </div>
+
+                    <div class="slide-box fade">
+                        <div class="slide-number">2 / 11</div>
+                        <img src="Assets/Images/Sliders/Slider2.jpg" alt="Loading...">
+                    </div>
+
+                    <div class="slide-box fade">
+                        <div class="slide-number">3 / 11</div>
+                        <img src="Assets/Images/Sliders/Slider3.jpg" alt="Loading...">
+                    </div>
+
+                    <div class="slide-box fade">
+                        <div class="slide-number">4 / 11</div>
+                        <img src="Assets/Images/Sliders/Slider4.jpg" alt="Loading...">
+                    </div>
+
+                    <div class="slide-box fade">
+                        <div class="slide-number">5 / 11</div>
+                        <img src="Assets/Images/Sliders/Slider5.jpg" alt="Loading...">
+                    </div>
+
+                    <div class="slide-box fade">
+                        <div class="slide-number">6 / 11</div>
+                        <img src="Assets/Images/Sliders/Slider6.jpg" alt="Loading...">
+                    </div>
+
+                    <div class="slide-box fade">
+                        <div class="slide-number">7 / 11</div>
+                        <img src="Assets/Images/Sliders/Slider7.jpg" alt="Loading...">
+                    </div>
+
+                    <div class="slide-box fade">
+                        <div class="slide-number">8 / 11</div>
+                        <img src="Assets/Images/Sliders/Slider8.jpg" alt="Loading...">
+                    </div>
+
+                    <div class="slide-box fade">
+                        <div class="slide-number">9 / 11</div>
+                        <img src="Assets/Images/Sliders/Slider9.jpg" alt="Loading...">
+                    </div>
+
+                    <div class="slide-box fade">
+                        <div class="slide-number">10 / 11</div>
+                        <img src="Assets/Images/Sliders/Slider10.jpg" alt="Loading...">
+                    </div>
+
+                    <div class="slide-box fade">
+                        <div class="slide-number">111 / 11</div>
+                        <img src="Assets/Images/Sliders/Slider11.jpg" alt="Loading...">
+                    </div>
+
+                    <a class="previous" onclick="plusSlides(-1)"><i class="fas fa-angles-left"></i></a>
+                    <a class="next" onclick="plusSlides(1)"><i class="fas fa-angles-right"></i></a>
+
+
+
+                    <div style="text-align:center">
+                        <span class="rounded_btn" onclick="currentSlide(1)"></span>
+                        <span class="rounded_btn" onclick="currentSlide(2)"></span>
+                        <span class="rounded_btn" onclick="currentSlide(3)"></span>
+                        <span class="rounded_btn" onclick="currentSlide(4)"></span>
+                        <span class="rounded_btn" onclick="currentSlide(5)"></span>
+                        <span class="rounded_btn" onclick="currentSlide(6)"></span>
+                        <span class="rounded_btn" onclick="currentSlide(7)"></span>
+                        <span class="rounded_btn" onclick="currentSlide(8)"></span>
+                        <span class="rounded_btn" onclick="currentSlide(9)"></span>
+                        <span class="rounded_btn" onclick="currentSlide(10)"></span>
+                        <span class="rounded_btn" onclick="currentSlide(11)"></span>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- SLIDER END -->
+        </div>
+
+        <div class="right-side">
+            <img class="right-side-img" src="Assets/Images/Adds.jpg" alt="Loading...">
+            <img class="right-side-img" src="Assets/Images/Adds 2.jpeg" alt="Loading...">
+        </div>
     </section>
-    <!-- SLIDER END -->
 
     <!-- MAIN SECTION END -->
 
     <!-- JAVASCRIPT FILE LINK -->
-    <script src="./Javascript/headers.js"></script>
+    <script src="Javascript/index.js"></script>
+    <script src="Javascript/headers.js"></script>
 </body>
 
 </html>
