@@ -36,11 +36,11 @@
 
 /* ------------------------- RIGHT SIDE ------------------------- */
 .right-side{
-    width: 30%;
+    width: 20%;
 }
 .right-side-img{
     width: 90%;
-    height: 400px;
+    height: 200px;
     margin-bottom: 10px;
 }
 /* ------------------------- RESPONSIVE ------------------------- */
