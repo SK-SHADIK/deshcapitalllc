@@ -31,7 +31,8 @@
             <div>
                 <ul class="icons">
                     <li><a href="tel:844 337 4227"><i class="fas fa-phone"></i></a></li>
-                    <li><a href="https://www.facebook.com/deshcapitalllc/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <li><a href="https://www.facebook.com/deshcapitalllc/" target="_blank"><i
+                                class="fab fa-facebook-square"></i></a>
                     </li>
                     <li><a href="mailto:info@deshcapitalllc.com" target="_blank"><i class="fas fa-envelope"></i></a>
                     </li>
@@ -295,7 +296,8 @@
                 reiciendis animi aliquid quia?</p>
 
             <ul class="icon">
-                <li><a href="https://www.facebook.com/deshcapitalllc/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.facebook.com/deshcapitalllc/" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a></li>
                 <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
                 <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
             </ul>
@@ -316,17 +318,21 @@
         <div class="footer-feedback">
             <h1 class="footer-title">Feedbacks</h1>
             <p class="footer-text">Give your feedback here</p>
-            <form action="">
-                <input class="inputs" type="text" placeholder="Please Enter Your Name">
-                <textarea name="" id="" class="inputs" rows="5" placeholder="Please Enter Your Feedbacks"></textarea>
-                <button class="feedback-btn">Submit</button>
+            <form id="myform" autocomplete="off">
+                <input name="name" class="inputs" type="text" placeholder="Please Enter Your Name">
+                <textarea name="comment" id="comment" class="inputs" rows="5" placeholder="Please Enter Your Feedbacks"
+                    required></textarea>
+                <button type="submit" id="sub" class="feedback-btn" onclick="myFunction()">Submit</button>
             </form>
-            
+
         </div>
         <div class="contact">
             <h1 class="footer-title">Contact Us</h1>
-            <iframe title="" class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4248.400548399734!2d-81.48490118459267!3d28.324574404702034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd8185579284d3%3A0xeda2f0ec1ecbeecb!2s2627%20Chatham%20Cir%2C%20Kissimmee%2C%20FL%2034746%2C%20USA!5e1!3m2!1sen!2sbd!4v1679847804749!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p class="contact-info"><span class="contact-info-header">Address:</span> 2627 Chatham Circle <br>Kissimmee, FL 34746</p>
+            <iframe title="" class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4248.400548399734!2d-81.48490118459267!3d28.324574404702034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd8185579284d3%3A0xeda2f0ec1ecbeecb!2s2627%20Chatham%20Cir%2C%20Kissimmee%2C%20FL%2034746%2C%20USA!5e1!3m2!1sen!2sbd!4v1679847804749!5m2!1sen!2sbd"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="contact-info"><span class="contact-info-header">Address:</span> 2627 Chatham Circle <br>Kissimmee,
+                FL 34746</p>
             <p class="contact-info">M-F 9am 5pm EST</p>
             <ul class="icon">
                 <li><a href="tel:844 337 4227"><i class="fas fa-phone"></i></a></li>
@@ -339,6 +345,7 @@
     <!-- JAVASCRIPT FILE LINK -->
     <script src="Javascript/index.js"></script>
     <script src="Javascript/headers.js"></script>
+    <script src="Javascript/footer.js"></script>
 </body>
 
 </html>
