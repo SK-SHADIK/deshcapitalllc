@@ -218,19 +218,19 @@ sub{
     margin-bottom: 10px;
 }
 
-@media (max-width: 1380px) {
+@media screen and  (max-width: 1380px) {
     .right-side-img {
         height: 300px;
     }
 }
 
-@media (max-width: 1380px) {
+@media screen and  (max-width: 1380px) {
     .right-side-img {
         height: 220px;
     }
 }
 
-@media (max-width: 880px) {
+@media screen and  (max-width: 880px) {
     .tmr-add-section {
         flex-direction: column;
     }
@@ -279,6 +279,12 @@ sub{
     height: 120px;
     border: 3px solid #DBF9D8;
     border-radius: 10px;
+    transition: width 1s, height 1s, padding-top 1s;
+}
+.closest-service:hover{
+    padding-top: 20px;
+    width: 190px;
+    height: 150px;
 }
 .numbers{
     font-size: 25px;
@@ -290,6 +296,16 @@ sub{
     font-size: 20px;
     font-weight: 700;
     color: #00000099;
+}
+@media screen and (max-width: 880px) {
+    .closest-services-title{
+        font-size: 30px;
+    }
+}
+@media screen and  (max-width: 480px) {
+    .closest-service-box{
+        flex-direction: column;
+    }
 }
 
 
@@ -340,17 +356,17 @@ sub{
     padding-right: 10px;
 }
 
-@media (max-width: 1680px) {
+@media screen and  (max-width: 1680px) {
     .feedback-box{
         grid-template-columns: repeat(3, 1fr);
     }
 }
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .feedback-box{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (max-width: 880px) {
+@media screen and (max-width: 880px) {
     .feedbacks-title{
         font-size: 30px;
     }
@@ -361,12 +377,12 @@ sub{
         width: 100%;
     }
 }
-@media (max-width: 380px) {
+@media screen and  (max-width: 380px) {
     .feedback{
         height: 220px;
     }
 }
-@media (max-width: 300px) {
+@media screen and  (max-width: 300px) {
     .feedback{
         height: 280px;
     }
