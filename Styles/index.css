@@ -280,6 +280,9 @@ sub{
     padding: 10px;
     border-radius: 10px;
 }
+.feedback:hover{
+    background: #b2f6ac;
+}
 .comma{
     font-size: 30px;
     color: #FF5E76;
