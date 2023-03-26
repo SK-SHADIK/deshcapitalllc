@@ -55,7 +55,6 @@
     background: linear-gradient(145deg, #F1E5AC, #90EE90);
     margin: 0 10px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .card-slider.active {
@@ -256,5 +255,78 @@ sub{
 }
 
 
+/* ------------------------- Feedbacks ------------------------- */
 
+.feedbacks{
+    margin: 20px;
+}
+.feedbacks-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: #FF5E76;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.feedback-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.feedback{
+    width: 80%;
+    height: 200px;
+    background: #DBF9D8;
+    padding: 10px;
+    border-radius: 10px;
+}
+.comma{
+    font-size: 30px;
+    color: #FF5E76;
+}
+.feedback-text{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+.feedback-by{
+    float: right;
+    font-size: 16px;
+    font-weight: 900;
+    color: #000000d6;
+    padding-right: 10px;
+}
 
+@media (max-width: 1680px) {
+    .feedback-box{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 1280px) {
+    .feedback-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 880px) {
+    .feedbacks-title{
+        font-size: 30px;
+    }
+    .feedback-box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feedback{
+        width: 100%;
+    }
+}
+@media (max-width: 380px) {
+    .feedback{
+        height: 220px;
+    }
+}
+@media (max-width: 300px) {
+    .feedback{
+        height: 280px;
+    }
+}
