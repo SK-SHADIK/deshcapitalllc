@@ -35,14 +35,14 @@
     border: 2px solid #DB4437;
     padding: 3px;
 }
-.icons li a .fa-facebook{
+.icons li a .fa-facebook-square{
     color: #3b5998;
     border: 2px solid #3b5998;
     padding: 3px;
 }
 .icons li a .fa-phone:hover, 
 .icons li a .fa-envelope:hover,
-.icons li a .fa-facebook:hover{
+.icons li a .fa-facebook-square:hover{
     color: #000;
     border: 2px solid #000;
     border-radius: 2px;
