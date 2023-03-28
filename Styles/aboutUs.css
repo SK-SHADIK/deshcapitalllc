@@ -1,0 +1,129 @@
+.aboutus-section{
+    margin: 30px;
+}
+.switch-btn,
+.about-section,
+.team-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    border: 3px solid #90EE90;
+    color: #000;
+    background: #90EE90;
+    border-radius: 10px;
+}
+.switch-btn:hover,
+.about-section:hover,
+.team-section:hover{
+    color: #FF5E76;
+    background: #fff;
+    border: 3px solid #FF5E76;
+    border-radius: 5px;
+}
+.section-btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.aboutus{
+    margin: 30px;
+}
+.aboutus-team-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: #00B2FF;
+}
+.aboutus-text{
+    margin: 20px;
+    color: #000000d0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.space{
+    margin-top: 150px;
+}
+.teams{
+    margin: 30px;
+}
+.team-box{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.team{
+    width: 300px;
+    background: #90EE90;
+    text-align: center;
+    border-radius: 10px;
+}
+img{
+    width: 90%;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.name{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.des{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.team-icon{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.team-icon li{
+    list-style: none;
+}
+.team-icon li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+@media screen and  (max-width: 680px) {
+    .section-btn{
+        flex-direction: column;
+    }
+    .aboutus-team-title{
+        font-size: 30px;
+    }
+    .aboutus-text{
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    .team-box{
+        flex-direction: column;
+    }
+    
+}
+@media screen and  (max-width: 300px) {
+    .team{
+        width: 100%;
+    }
+}

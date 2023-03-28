@@ -57,6 +57,9 @@
 .fa-envelope:hover{
     color: #c4302b;
 }
+.fa-linkedin:hover{
+    color: #0072b1;
+}
 .links li{
     list-style: none;
 }
