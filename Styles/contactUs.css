@@ -1,0 +1,109 @@
+.contactus{
+    margin: 30px;
+}
+.contact-maps{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+.contact-infos{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.contact-infos-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #00B2FF;
+    text-decoration: underline;
+}
+.contact-info-text, 
+.contact-info-text a{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000ea;
+}
+.contact-info-text a{
+    color: #FF5E76;
+}
+.contact-info-bold{
+    font-weight: 900;
+    margin-right: 10px;
+}
+.contact-form{
+    margin-top: 20px;
+    width: 400px;
+}
+.contact-form-label{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.contact-form-input{
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    color: #000000f9;
+    background: #90ee9030;
+    border-radius: 5px;
+    letter-spacing: 0.5px;  
+}
+.contact-form-btn{
+    float: right;
+}
+.contact-form-btn-submit{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+    background: #90EE90;
+    border: 2px solid #90EE90;
+    border-radius: 10px;
+}
+.contact-form-btn-submit:hover{
+    color: #FF5E76;
+    background: #fff;
+    border: 2px solid #FF5E76;
+    border-radius: 5px;
+}
+.contact-form-btn-reset{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #FF5E76;
+    background: #fff;
+    border: 2px solid #FF5E76;
+    border-radius: 5px;
+}
+.contact-form-btn-reset:hover{
+    color: #000;
+    background: #90EE90;
+    border: 2px solid #90EE90;
+    border-radius: 10px;
+}
+@media screen and (max-width: 980px) {
+    .contact-infos{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 440px) {
+    .contact-form{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .contact-info-text, 
+    .contact-info-text a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 290px) {
+    .contact-info-text, 
+    .contact-info-text a{
+        font-size: 12px;
+    }
+}
