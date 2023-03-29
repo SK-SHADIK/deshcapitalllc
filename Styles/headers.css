@@ -84,12 +84,12 @@ nav .nav-bar li a {
     font-size: 18px;
     font-weight: 900;
     text-decoration: none;
+    padding: 5px;
 }
 
 nav .nav-bar li a:hover {
     color: #0c490cf2;
     background: #fff;
-    padding: 5px;
     border-radius: 5px;
 }
 
