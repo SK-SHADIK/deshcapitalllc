@@ -31,8 +31,8 @@
     border-radius: 5px;
 }
 .icons li a .fa-phone, .icons li a .fa-envelope{
-    color: #DB4437;
-    border: 2px solid #DB4437;
+    color: #FF5E76;
+    border: 2px solid #FF5E76;
     padding: 3px;
 }
 .icons li a .fa-facebook-square{
@@ -126,19 +126,19 @@ nav .cancel-btn{
     display: none;
 }
 /* ----------------------------------- FOR RESPONSIVE ----------------------------------- */
-@media (max-width: 1470px) {
+@media screen and (max-width: 1470px) {
     nav {
         padding: 0 50px;
     }
 
 }
-@media (max-width: 1370px) {
+@media screen and (max-width: 1370px) {
     nav {
         padding: 0 30px;
     }
 
 }
-@media (max-width: 1180px) {
+@media screen and (max-width: 1180px) {
     nav {
         padding: 0px;
     }
@@ -199,7 +199,7 @@ nav .cancel-btn{
     }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
     nav .logo {
         height: 40px;
     }
@@ -234,7 +234,7 @@ nav .cancel-btn{
     border-radius: 5px;
 }
 /* ------------------------- RESPONSIVE ------------------------- */
-@media (max-width: 680px) {
+@media screen and (max-width: 680px) {
     .bangla-section{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
