@@ -1,0 +1,128 @@
+.calculator{
+    margin: 30px;
+}
+.switch-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    border: 3px solid #90EE90;
+    color: #000;
+    background: #90EE90;
+    border-radius: 10px;
+}
+.switch-btn:hover{
+    color: #FF5E76;
+    background: #fff;
+    border: 3px solid #FF5E76;
+    border-radius: 5px;
+}
+.calculator-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: #00B2FF;
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.calculator-form{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.calculator-label{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin-left: 5px;
+}
+.calculator-input{
+    width: 320px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 5px;
+    color: #000000f9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.calculator-form-btn{
+    float: right;
+}
+.calculator-form-btn-submit{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+    background: #90EE90;
+    border: 2px solid #90EE90;
+    border-radius: 10px;
+}
+.calculator-form-btn-submit:hover{
+    color: #FF5E76;
+    background: #fff;
+    border: 2px solid #FF5E76;
+    border-radius: 5px;
+}
+.calculator-form-btn-reset{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #FF5E76;
+    background: #fff;
+    border: 2px solid #FF5E76;
+    border-radius: 5px;
+}
+.calculator-form-btn-reset:hover{
+    color: #000;
+    background: #90EE90;
+    border: 2px solid #90EE90;
+    border-radius: 10px;
+}
+.result{
+    border-left: 3px solid #000;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #FF5E76;
+    letter-spacing: 0.5px;
+}
+.rentvsbuy{
+    margin-top: 50px;
+}
+@media screen and  (max-width: 1180px) {
+    .calculator-form{
+        flex-direction: column;
+    }
+    .result{
+        border-left: none;
+        border-top: 3px solid #000;
+    }
+    .calculator-form-btn{
+        float: left;
+    }
+}
+@media screen and  (max-width: 680px) {
+    .calculator-title{
+        font-size: 30px;
+    }    
+}
+@media screen and (max-width: 380px) {
+    .calculator-input{
+        width: 100%;
+    }
+    .result{
+        padding-left: 10px;
+        font-size: 18px;
+    }
+}
