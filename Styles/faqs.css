@@ -1,7 +1,33 @@
 .collect-faqs{
     margin: 30px;
 }
+.switch-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    border: 3px solid #90EE90;
+    color: #000;
+    background: #90EE90;
+    border-radius: 10px;
+}
+.switch-btn:hover{
+    color: #FF5E76;
+    background: #fff;
+    border: 3px solid #FF5E76;
+    border-radius: 5px;
+}
+.section-btn{
+    display: flex;
+    justify-content: center;
+}
 .collect-faqs-title{
+    margin-top: 20px;
     font-size: 30px;
     font-weight: 900;
     text-align: center;
@@ -66,7 +92,7 @@
     border-radius: 10px;
 }
 .faqs{
-    margin: 30px;
+    margin: 50px;
     background: linear-gradient(145deg, #F1E5AC, #90EE90);
     border-radius: 20px;
 }
