@@ -1,0 +1,143 @@
+.collect-faqs{
+    margin: 30px;
+}
+.collect-faqs-title{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: #00B2FF;
+}
+.collect-faqs-form{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.collect-faqs-label{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin-left: 5px;
+}
+.collect-faqs-input{
+    width: 320px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 5px;
+    color: #000000f9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.textarea{
+    height: 120px;
+}
+.collect-faqs-form-btn{
+    float: right;
+}
+.collect-faqs-form-btn-submit{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+    background: #90EE90;
+    border: 2px solid #90EE90;
+    border-radius: 10px;
+}
+.collect-faqs-form-btn-submit:hover{
+    color: #FF5E76;
+    background: #fff;
+    border: 2px solid #FF5E76;
+    border-radius: 5px;
+}
+.collect-faqs-form-btn-reset{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #FF5E76;
+    background: #fff;
+    border: 2px solid #FF5E76;
+    border-radius: 5px;
+}
+.collect-faqs-form-btn-reset:hover{
+    color: #000;
+    background: #90EE90;
+    border: 2px solid #90EE90;
+    border-radius: 10px;
+}
+.faqs{
+    margin: 30px;
+    background: linear-gradient(145deg, #F1E5AC, #90EE90);
+    border-radius: 20px;
+}
+.faqs-title{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+.faq{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 760px;
+    margin: 0 auto;
+}
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+summary::marker {
+    display: none;
+    content: "";
+}
+.question,
+.down-arrow{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+}
+.down-arrow{
+    padding-right: 10px;
+}
+.question {
+    width: 760px;
+}
+
+
+span {
+    margin-top: 4px;
+    color: #000;
+}
+
+details>p {
+    width: 650px;
+    color: #000000c9;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+hr {
+    color: #000;
+    border: 1px solid #000;
+}
+
+@media screen and (max-width: 880px) {
+    .faq{
+        width: 90%;
+    }
+    .answer{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .collect-faqs-input{
+        width: 100%;
+    }
+}
