@@ -59,5 +59,5 @@ function calculate() {
     }
 
     let BuyRentResult = document.getElementById("result_buy");
-    BuyRentResult.innerHTML = `ক্রয় এর মোট খরচ: $${TotalCostBuy.toFixed(2)}<br>বিক্রয় এর মোট খরচ: $${TotalCostRent.toFixed(2)}<br>${TotalCostBuy > TotalCostRent ? "আপনার ক্রয় করা উচিত ।" : "আপনার বিক্রয় করা উচিত ।"}`;
+    BuyRentResult.innerHTML = `ক্রয় এর মোট খরচ: $${TotalCostBuy.toFixed(2)}<br>ভাড়া এর মোট খরচ: $${TotalCostRent.toFixed(2)}<br>${TotalCostBuy > TotalCostRent ? "আপনার ক্রয় করা উচিত ।" : "আপনার ভাড়া করা উচিত ।"}`;
 }
