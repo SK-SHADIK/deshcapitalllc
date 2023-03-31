@@ -245,4 +245,17 @@ nav .cancel-btn{
         font-size: 12px;
     }
 }
+/* ----------------- FOR SCROLL BAR -------------------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #90EE90);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, #F1E5AC);
+}
 
