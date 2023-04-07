@@ -17,6 +17,7 @@
 }
 .top-section-title{
     font-size: 20px;
+    font-weight: 500;
 }
 .icons{
     display: flex;
@@ -29,24 +30,11 @@
     margin-right: 5px;
     font-size: 14px;
     border-radius: 5px;
-}
-.icons li a .fa-phone, .icons li a .fa-envelope{
-    color: #FF5E76;
-    border: 2px solid #FF5E76;
-    padding: 3px;
-}
-.icons li a .fa-facebook-square{
-    color: #3b5998;
-    border: 2px solid #3b5998;
-    padding: 3px;
-}
-.icons li a .fa-phone:hover, 
-.icons li a .fa-envelope:hover,
-.icons li a .fa-facebook-square:hover{
     color: #000;
     border: 2px solid #000;
-    border-radius: 2px;
+    padding: 2px;
 }
+
 /* ----------------------------------- Nav Bar ----------------------------------- */
 
 nav {
@@ -243,6 +231,11 @@ nav .cancel-btn{
     }
     .bangla-section li a{
         font-size: 12px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .bangla-section li a{
+        font-size: 10px;
     }
 }
 /* ----------------- FOR SCROLL BAR -------------------- */

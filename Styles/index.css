@@ -22,7 +22,7 @@
 }
 
 .left-side-title {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 900;
     color: #FF5E76;
 }
@@ -30,6 +30,7 @@
 .left-side-text {
     margin-top: 10px;
     color: #0000009a;
+    font-size: 14px;
     font-weight: 700;
 }
 /* ------------------------- Auto Slider Card Todays Mortgage Rate ------------------------- */
@@ -52,7 +53,7 @@
 .card {
     width: 100%;
     height: 250px;
-    background: linear-gradient(145deg, #F1E5AC, #90EE90);
+    background: #EEEF20;
     margin: 0 10px;
     border-radius: 5px;
 }
@@ -103,7 +104,7 @@ sub{
 
 .slide-box {
     display: none;
-    border: 3px solid #90EE90;
+    border: 3px solid #55A630;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -127,7 +128,7 @@ sub{
     top: 50%;
     padding: 20px;
     margin-top: -22px;
-    color: #90EE90;
+    color: #55A630;
     font-weight: bold;
     font-size: 20px;
     transition: 0.5s ease;
@@ -255,7 +256,7 @@ sub{
 }
 
 
-/* ------------------------- Feedbacks ------------------------- */
+/* ------------------------- Closest Services ------------------------- */
 .closest-services{
     margin: 80px 20px 80px 20px;
 }
@@ -330,7 +331,7 @@ sub{
 .feedback{
     width: 80%;
     height: 200px;
-    background: #DBF9D8;
+    background: #efef208e;
     padding: 10px;
     border-radius: 10px;
 }

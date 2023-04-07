@@ -71,11 +71,11 @@ hr{
 }
 .team{
     width: 300px;
-    background: #90EE90;
+    background: #00000056;
     text-align: center;
     border-radius: 10px;
 }
-img{
+.aboutus-img {
     width: 90%;
     height: 200px;
     border-radius: 50%;
