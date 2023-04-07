@@ -1,42 +1,25 @@
 // ------------- TODAYS MORTGAGE RATE CARD SLIDER -----------------
-const slider = document.querySelector(".card-slider");
-let isDown = false;
-let startX;
-let scrollLeft;
-
-function autoScroll() {
-  slider.scrollLeft += slider.offsetWidth;
-  if (slider.scrollLeft >= slider.scrollWidth - slider.offsetWidth) {
-    slider.scrollLeft = 0;
-  }
-}
-
-setInterval(autoScroll, 5000);
-
-slider.addEventListener("mousedown", (e) => {
-  isDown = true;
-  slider.classList.add("active");
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-
-slider.addEventListener("mouseleave", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-
-slider.addEventListener("mouseup", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-
-slider.addEventListener("mousemove", (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 3;
-  slider.scrollLeft = scrollLeft - walk;
-});
+let intervalTime = 5000;
+		
+		let SlideContainer = document.querySelector('.slider-container');
+		let SlideCards = document.querySelectorAll('.slide-card');
+		
+		let currentIndex = 0;
+		
+		function NextCard() {
+			currentIndex++;
+			
+			if (currentIndex >= SlideCards.length) {
+				currentIndex = 0;
+			}
+			
+			SlideContainer.scrollTo({
+				left: SlideCards[currentIndex].offsetLeft,
+				behavior: 'smooth'
+			});
+		}
+		
+		setInterval(NextCard, intervalTime);
 
 // ------------- SLIDER -----------------
 let menualslideIndex = 1;

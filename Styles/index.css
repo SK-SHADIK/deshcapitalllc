@@ -35,56 +35,47 @@
 }
 /* ------------------------- Auto Slider Card Todays Mortgage Rate ------------------------- */
 
-.card-slider {
+.slider-container {
     margin: 30px;
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-
-.card-slide {
-    scroll-snap-align: start;
+.slide-card {
     flex: 0 0 auto;
+    padding-bottom: 10px;
     width: 100%;
-    margin-right: 20px;
-}
-
-.card {
-    width: 100%;
-    height: 250px;
-    background: #EEEF20;
-    margin: 0 10px;
+    height: 50px;
     border-radius: 5px;
-}
-
-.card-slider.active {
-    cursor: grabbing;
-    cursor: -webkit-grabbing;
-}
-
-.card-slider.active .card-slide {
-    pointer-events: none;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #EEEF20;
 }
 .tm-title{
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 900;
     letter-spacing: 2px;
 }
 .tm-txt{
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     color:#000000cf;
 }
 sub{
-    font-size: 14px;
+    font-size: 12px;
 }
 .green,
 .red{
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 .green{
@@ -93,12 +84,52 @@ sub{
 .red {
     color: red;
 }
-@media screen and (max-width: 480px) {
-    .card-slider{
-        margin: 10px 0 10px 0;
+@media screen and (max-width: 680px) {
+    .tm-title{
+        font-size: 20px;
+    }
+    .tm-txt{
+        font-size: 14px;
+    }
+    sub{
+        font-size: 8px;
+    }
+    .green,
+    .red{
+        font-size: 20px;
     }
 }
-
+@media screen and (max-width: 420px) {
+    .tm-title{
+        font-size: 14px;
+    }
+    .tm-txt{
+        font-size: 10px;
+    }
+    sub{
+        font-size: 8px;
+    }
+    .green,
+    .red{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .slide-card{
+        flex-direction: column;
+        height: 100px;
+    }
+    .tm-title{
+        padding-top: 10px;
+    }
+    .tm-txt{
+        margin-top: 5px;
+    }
+    .green,
+    .red{
+        margin-top: 5px;
+    }
+}
 
 /* ------------------------- SLIDER ------------------------- */
 
