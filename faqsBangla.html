@@ -90,16 +90,18 @@
         <div class="collect-faqs-form">
             <form action="">
                 <label class="collect-faqs-label" for="name">আপনার নাম:</label><br>
-                <input class="collect-faqs-input" type="text" placeholder="নাম"><br>
+                <input class="collect-faqs-input" type="text" name="name" placeholder="নাম" required><br>
 
                 <label class="collect-faqs-label" for="question">প্রশ্ন:</label><br>
-                <textarea class="collect-faqs-input textarea" name="" id="" rows="10"
-                    placeholder="প্রশ্ন"></textarea><br>
+                <textarea class="collect-faqs-input textarea" name="question" id="" rows="10"
+                    placeholder="প্রশ্ন" required></textarea><br>
 
-                <div class="collect-faqs-form-btn">
-                    <button class="collect-faqs-form-btn-reset" type="reset">রিসেট</button>
-                    <button class="collect-faqs-form-btn-submit" type="submit">জমা</button>
-                </div>
+                    <h1 class="submit-message" id="msg"></h1>
+
+
+                    <div class="collect-faqs-form-btn">
+                        <button class="collect-faqs-form-btn-reset" type="reset">Reset</button>
+                        <button class="collect-faqs-form-btn-submit" type="submit" id="sub" >Submit</button>
             </form>
         </div>
     </section>
@@ -239,6 +241,7 @@
 
     <!-- JAVASCRIPT FILE LINK -->
     <script src="Javascript/headers.js"></script>
+    <script src="Javascript/faqs.js"></script>
     <script src="Javascript/feedback.js"></script>
 </body>
 

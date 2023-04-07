@@ -110,6 +110,12 @@ hr{
     border-radius: 5px;
     padding: 5px;
 }
+.submit-message{
+    color: green;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 900;
+}
 @media screen and  (max-width: 680px) {
     .section-btn{
         flex-direction: column;
