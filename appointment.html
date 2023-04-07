@@ -86,17 +86,17 @@
         <div class="appointment-form">
             <form action="">
                 <label class="appointment-label" for="name">Name:</label><br>
-                <input class="appointment-input" type="text" name="" id="" placeholder="Enter Name"><br>
+                <input class="appointment-input" type="text" name="name" id="" placeholder="Enter Name" required><br>
                 <label class="appointment-label" for="email">Email:</label><br>
-                <input class="appointment-input" type="text" name="" id="" placeholder="Enter Email"><br>
+                <input class="appointment-input" type="email" name="email" id="" placeholder="Enter Email" required><br>
                 <label class="appointment-label" for="phone">Phone:</label><br>
-                <input class="appointment-input" type="text" name="" id="" placeholder="Enter Phone"><br>
+                <input class="appointment-input" type="text" name="phone" id="" placeholder="Enter Phone" required><br>
                 <label class="appointment-label" for="date">Date:</label><br>
-                <input class="appointment-input" type="date" name="" id=""><br>
+                <input class="appointment-input" type="date" name="date" id="" required><br>
                 <label class="appointment-label" for="time">Time:</label><br>
-                <input class="appointment-input" type="time" name="" id=""><br>
+                <input class="appointment-input" type="time" name="time" id="" required><br>
                 <label class="appointment-label" for="appointmentfor">Appointment for:</label><br>
-                <select class="appointment-input" name="" id="">
+                <select class="appointment-input" name="reason" id="" required>
                     <option value="">Select One...</option>
                     <option value="Business">Business</option>
                     <option value="ShortDiscussion">Short Discussion</option>
@@ -105,11 +105,14 @@
                     <option value="Other">Other</option>
                 </select><br>
                 <label class="appointment-label" for="description">Appointment Description:</label><br>
-                <textarea class="appointment-input appointment-textarea" rows="5"  name="" id="" placeholder="Enter Description"></textarea><br>
+                <textarea class="appointment-input appointment-textarea" rows="5"  name="description" id="" placeholder="Enter Description"></textarea><br>
+
+                <h1 class="submit-message" id="msg"></h1>
+
 
                 <div class="appointment-form-btn">
                     <button class="appointment-form-btn-reset" type="reset">Reset</button>
-                    <button class="appointment-form-btn-submit" type="submit">Apply</button>
+                    <button class="appointment-form-btn-submit" type="submit" id="sub" >Submit</button>
                 </div>
                 
                 
@@ -177,6 +180,7 @@
 
     <!-- JAVASCRIPT FILE LINK -->
     <script src="Javascript/headers.js"></script>
+    <script src="Javascript/appointment.js"></script>
     <script src="Javascript/feedback.js"></script>
 </body>
 

@@ -2,7 +2,7 @@ let form = document.querySelector("form");
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       let data = new FormData(form);
-      fetch('https://script.google.com/macros/s/AKfycbySQvguJupVfnn9pc3Bv_VZ-FbYwQWfNLXHPVGT4MmV2RuIr7Ro5uvpJyz_JvTNgQ4vbw/exec', {
+      fetch('https://script.google.com/macros/s/AKfycbyDJ263gVfKScE-OaKJXlDNKIoZJdkuk_PFdSNERbO9QcV0ZSuGnzySpD-ptgDzA1NcPQ/exec', {
         method: "POST",
         body: data
       })
@@ -12,3 +12,5 @@ let form = document.querySelector("form");
           document.querySelector("#sub").value = "Submit";
         });
     })
+
+    
