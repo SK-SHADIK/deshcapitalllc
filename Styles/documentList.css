@@ -62,6 +62,26 @@ hr{
     color: blue;
     font-weight: 700;
 }
+.box{
+    border: 3px solid #000;
+    margin-top: 20px;
+}
+.box-text{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    padding: 5px;
+}
+.color{
+    color: #FF5E76;
+}
+.document-list-header {
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: 900;
+    color: #FF5E76;
+}
 @media screen and  (max-width: 480px) {
     .mail{
         font-size: 10px;
