@@ -52,3 +52,18 @@ hr{
     text-align: center;
     color: #FF5E76;
 }
+.mail-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.mail{
+    text-decoration: none;
+    color: blue;
+    font-weight: 700;
+}
+@media screen and  (max-width: 480px) {
+    .mail{
+        font-size: 10px;
+    }   
+}
