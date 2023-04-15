@@ -40,3 +40,15 @@
     text-align: center;
     color: #00B2FF;
 }
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.document-list-title {
+    margin-top: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: 900;
+    text-align: center;
+    color: #FF5E76;
+}
