@@ -8,6 +8,10 @@
     /* IE10+/Edge */
     user-select: none;
     /* Standard */
+    background-image: url("/Assets/Images/LogoTrans.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .switch-btn {
@@ -55,7 +59,9 @@ hr{
 .mail-section{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+    margin: 20px;
+    flex-direction: column;
 }
 .mail{
     text-decoration: none;
@@ -82,8 +88,42 @@ hr{
     font-weight: 900;
     color: #FF5E76;
 }
-@media screen and  (max-width: 480px) {
-    .mail{
-        font-size: 10px;
-    }   
+.document-list-list{
+    margin-left: 30px;
+}
+.document-list-list li{
+    margin: 20px;
+    color: #000000d0;
+    font-size: 16px;
+}
+.center{
+    text-align: center;
+}
+.circle{
+    list-style: circle;
+}
+.square{
+    list-style: square;
+}
+.button-text-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-direction: column;
+}
+.download-btn{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FF5E76;
+    background: #fff;
+    border: 2px solid #FF5E76;
+    border-radius: 5px;
+    padding: 5px;
+}
+.download-btn:hover{
+    color: #000;
+    background: #90EE90;
+    border: 2px solid #90EE90;
+    border-radius: 10px
 }
