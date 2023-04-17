@@ -7,11 +7,7 @@
     -ms-user-select: none;
     /* IE10+/Edge */
     user-select: none;
-    /* Standard */
-    background-image: url("/Assets/Images/LogoTrans.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    /* Standard */ 
 }
 
 .switch-btn {
@@ -47,6 +43,12 @@
 hr{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.document-list{
+    background-image: url("/Assets/Images/LogoTrans.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .document-list-title {
     margin-top: 20px;
