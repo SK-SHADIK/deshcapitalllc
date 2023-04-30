@@ -39,7 +39,7 @@
     justify-content: center;
 }
 .collect-faqs-label{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: #000;
     margin-left: 5px;
@@ -47,7 +47,7 @@
 .collect-faqs-input{
     width: 320px;
     height: 30px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.5px;
     padding: 5px;
@@ -63,7 +63,7 @@
 }
 .collect-faqs-form-btn-submit{
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 900;
     color: #000;
     background: #90EE90;
@@ -78,7 +78,7 @@
 }
 .collect-faqs-form-btn-reset{
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 900;
     color: #FF5E76;
     background: #fff;
@@ -122,7 +122,7 @@ summary::marker {
 .question,
 .down-arrow{
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
     color: #000;
 }
@@ -142,7 +142,7 @@ span {
 details>p {
     width: 650px;
     color: #000000c9;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.5px;
     margin-bottom: 20px;

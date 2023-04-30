@@ -75,7 +75,7 @@ hr{
     margin-top: 20px;
 }
 .box-text{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     color: #000;
     padding: 5px;
@@ -96,7 +96,7 @@ hr{
 .document-list-list li{
     margin: 20px;
     color: #000000d0;
-    font-size: 16px;
+    font-size: 15px;
 }
 .center{
     text-align: center;

@@ -24,7 +24,7 @@
 }
 .mortgages-title{
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     color: #00B2FF;
 }
@@ -34,27 +34,23 @@ hr{
 }
 .mortgage-header{
     color: #FF5E76;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     margin: 20px;
     text-decoration: underline;
 }
 .mortgage-text{
-    margin: 20px;
+    margin: 14px;
     color: #000000d0;
     font-size: 16px;
     font-weight: 600;
 }
 @media screen and  (max-width: 680px) {
-    .mortgages-title{
-        font-size: 30px;
-    }
+    
     .mortgage-header{
-        font-size: 22px;
         margin: 20px 0;
     }
     .mortgage-text{
-        font-size: 14px;
         margin: 20px 0;
     }
     
