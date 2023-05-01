@@ -166,7 +166,6 @@ nav .hrader-section .list {
     position: absolute;
     background: #90EE90;
     top: 20px;
-    z-index: -1;
     opacity: 0;
     visibility: hidden;
     border-radius: 10px;
@@ -174,7 +173,7 @@ nav .hrader-section .list {
 }
 
 .list li:hover>ul {
-    top: 70px;
+    top: 100px;
     opacity: 1;
     visibility: visible;
     transition: all 0.5s ease;
@@ -257,10 +256,11 @@ nav .hrader-section .list {
     .list ul li {
         margin: 7px 20px;
         background: #EEEF20;
+        border-radius: 10px;
     }
 
     .list ul li a {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 30px;
         border-radius: 5px !important;
     }
