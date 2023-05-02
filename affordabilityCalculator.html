@@ -90,73 +90,32 @@
 
     <!-- MAIN SECTION START -->
     <section class="calculator">
-        <a class="switch-btn" href="calculatorBangla.html">বাংলা</a>
-        <div class="additional-payment">
-            <h1 class="calculator-title">Additional Payment Calculator</h1>
-            <hr>
-            <div class="calculator-form">
-                <form>
-                    <label class="calculator-label" for="loan-amount">Loan Amount ($):</label><br>
-                    <input class="calculator-input" type="number" id="loan-amount" name="loan-amount" required><br>
+        <h1 class="calculator-title">Affordability Calculator</h1>
+        <div class="calculator-form">
+            <form>
+                <label for="grossIncome" class="calculator-label">Annual Gross Income ($):</label><br>
+                <input type="number" id="grossIncome" name="grossIncome" class="calculator-input"><br><br>
+                <label for="debtPayment" class="calculator-label">Monthly Debt Payment ($):</label><br>
+                <input type="number" id="debtPayment" name="debtPayment" class="calculator-input"><br><br>
+                <label for="downPayment" class="calculator-label">Down Payment (% Or $):</label><br>
+                <input type="number" id="downPayment" name="downPayment" class="calculator-input">
+                <select id="downPaymentType" class="calculator-small-input">
+                    <option value="percent">%</option>
+                    <option value="dollars">$</option>
+                </select><br><br>
+                <label for="term" class="calculator-label">Term (Years):</label><br>
+                <input type="number" id="term" name="term" class="calculator-input"><br><br>
+                <label for="interestRate" class="calculator-label">Interest Rate (%):</label><br>
+                <input type="number" id="interestRate" name="interestRate" class="calculator-input"><br><br>
+                <div class="calculator-form-btn">
+                    <button type="reset" class="calculator-form-btn-reset">Reset</button>
+                    <button type="button" class="calculator-form-btn-submit"
+                        onclick="calculateAffordability()">Calculate Affordability</button>
 
-                    <label class="calculator-label" for="interest-rate">Interest Rate (%):</label><br>
-                    <input class="calculator-input" type="number" id="interest-rate" name="interest-rate" required><br>
-
-                    <label class="calculator-label" for="loan-term">Loan Term (Year):</label><br>
-                    <input class="calculator-input" type="number" id="loan-term" name="loan-term" required><br>
-
-                    <label class="calculator-label" for="additional-payment">Additional Payment ($):</label><br>
-                    <input class="calculator-input" type="number" id="additional-payment" name="additional-payment"><br>
-
-                    <div class="calculator-form-btn">
-                        <button class="calculator-form-btn-reset" type="reset">Reset</button>
-                        <button class="calculator-form-btn-submit" type="submit">Calculate</button>
-                    </div>
-
-                </form>
-                <p class="result" id="result"></p>
-            </div>
+                </div>
+            </form>
         </div>
-
-        <div class="rentvsbuy">
-            <h1 class="calculator-title">Rent vs Buy Calculator</h1>
-            <hr>
-            <div class="calculator-form">
-                <form>
-                    <label class="calculator-label" for="homePrice">Home Price ($):</label><br>
-                    <input class="calculator-input" type="number" id="homePrice" name="homePrice"><br>
-
-                    <label class="calculator-label" for="downPayment">Down Payment (%):</label><br>
-                    <input class="calculator-input" type="number" id="downPayment" name="downPayment"><br>
-
-                    <label class="calculator-label" for="interestRate">Interest Rate (%):</label><br>
-                    <input class="calculator-input" type="number" id="interestRate" name="interestRate"><br>
-
-                    <label class="calculator-label" for="loanTerm">Loan Term (Year):</label><br>
-                    <input class="calculator-input" type="number" id="loanTerm" name="loanTerm"><br>
-
-                    <label class="calculator-label" for="propertyTax">Property Tax ($):</label><br>
-                    <input class="calculator-input" type="number" id="propertyTax" name="propertyTax"><br>
-
-                    <label class="calculator-label" for="insurance">Insurance ($):</label><br>
-                    <input class="calculator-input" type="number" id="insurance" name="insurance"><br>
-
-                    <label class="calculator-label" for="rent">Rent ($):</label><br>
-                    <input class="calculator-input" type="number" id="rent" name="rent"><br>
-
-                    <label class="calculator-label" for="rentIncrease">Rent Increase (%):</label><br>
-                    <input class="calculator-input" type="number" id="rentIncrease" name="rentIncrease"><br>
-
-                    <div class="calculator-form-btn">
-                        <button class="calculator-form-btn-reset" type="reset">Reset</button>
-                        <button class="calculator-form-btn-submit" type="button" onclick="calculate()">Calculate</button>
-                    </div>
-
-                </form>
-
-                <div class="result" id="result_buy"></div>
-            </div>
-        </div>
+        <p id="affordability" class="result"></p>
     </section>
     <!-- MAIN SECTION END -->
 
@@ -215,8 +174,7 @@
     <!-- FOOTER END -->
 
     <!-- JAVASCRIPT FILE LINK -->
-    <script src="Javascript/headers.js"></script>
-    <script src="Javascript/calculator.js"></script>
+    <script src="Javascript/affordabilityCalculator.js"></script>
     <script src="Javascript/feedback.js"></script>
 </body>
 

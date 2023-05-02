@@ -1,27 +1,6 @@
 .calculator{
     margin: 30px;
 }
-.switch-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 40px;
-    text-decoration: none;
-    margin: 20px;
-    font-size: 20px;
-    font-weight: 900;
-    border: 3px solid #90EE90;
-    color: #000;
-    background: #90EE90;
-    border-radius: 10px;
-}
-.switch-btn:hover{
-    color: #FF5E76;
-    background: #fff;
-    border: 3px solid #FF5E76;
-    border-radius: 5px;
-}
 .calculator-title{
     text-align: center;
     font-size: 30px;
@@ -46,7 +25,15 @@ hr{
 }
 .calculator-input{
     width: 320px;
-    height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 5px;
+    color: #000000f9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.calculator-small-input{
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -66,6 +53,7 @@ hr{
     background: #90EE90;
     border: 2px solid #90EE90;
     border-radius: 10px;
+    margin-left: 20px;
 }
 .calculator-form-btn-submit:hover{
     color: #FF5E76;
@@ -89,36 +77,28 @@ hr{
     border-radius: 10px;
 }
 .result{
-    border-left: 3px solid #000;
-    padding-left: 30px;
-    padding-top: 30px;
+    text-align: center;
+    margin-top: 50px;
     font-size: 18px;
     font-weight: 900;
     color: #FF5E76;
     letter-spacing: 0.5px;
 }
-.rentvsbuy{
-    margin-top: 50px;
-}
+
 @media screen and  (max-width: 1180px) {
     .calculator-form{
         flex-direction: column;
     }
-    .result{
-        border-left: none;
-        border-top: 3px solid #000;
-    }
     .calculator-form-btn{
         float: left;
+    }
+    .calculator-form-btn-submit{
+        margin-top: 20px;
     }
 }
 
 @media screen and (max-width: 380px) {
     .calculator-input{
         width: 100%;
-    }
-    .result{
-        padding-left: 10px;
-        font-size: 16px;
     }
 }
