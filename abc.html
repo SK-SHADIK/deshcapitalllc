@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Monthly Payment Calculator</title>
+    <link rel="stylesheet" href="Styles/calculator.css">
+  </head>
+  <body>
+    <section class="calculator">
+    <h1 class="calculator-title">Monthly Payment Calculator</h1>
+    <div class="calculator-form">
+    <form>
+      <label for="loanAmount" class="calculator-label">Loan Amount:</label><br>
+      <input type="number" id="loanAmount" name="loanAmount" class="calculator-input"><br><br>
+      <label for="loanTerm" class="calculator-label">Loan Term (in years):</label><br>
+      <input type="number" id="loanTerm" name="loanTerm" class="calculator-input"><br><br>
+      <label for="interestRate" class="calculator-label">Interest Rate:</label><br>
+      <input type="number" step="0.01" id="interestRate" name="interestRate" class="calculator-input"><br><br>
+      <div class="calculator-form-btn">
+        <button type="reset" class="calculator-form-btn-reset">Reset</button>
+      <button type="button" onclick="calculateMonthlyPayment()" class="calculator-form-btn-submit">Calculate Monthly Payment</button>
+      </div>
+    </form>
+    </div>
+    <p id="monthlyPayment" class="result"></p>
+    </section>
+    <script>
+      function calculateMonthlyPayment() {
+        var loanAmount = document.getElementById("loanAmount").value;
+        var loanTerm = document.getElementById("loanTerm").value;
+        var interestRate = document.getElementById("interestRate").value;
+
+        var monthlyPayment = loanAmount * ((interestRate / 1200) / (1 - Math.pow(1 + (interestRate / 1200), -loanTerm * 12)));
+
+        document.getElementById("monthlyPayment").innerHTML = "Your monthly payment is $" + monthlyPayment.toFixed(2) + ".";
+      }
+    </script>
+  </body>
+</html>
