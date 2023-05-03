@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);  
     text-align: center;  
-    background: #55A630;
+    background: #90EE90;
     gap: 20px;
     padding-bottom: 50px;
 }
@@ -18,7 +18,7 @@
 }
 .footer-text{
     font-size: 14px;
-    font-weight: 700px;
+    font-weight: 900px;
     color: #000000dc;
     letter-spacing: 0.5px;
     margin: 10px;
@@ -65,7 +65,7 @@
 }
 .links li a{
     text-decoration: none;
-    color: #EEEF20;
+    color: #c4302b;
     font-size: 20px;
     font-weight: 900;
     padding-top: 5px;
@@ -106,7 +106,7 @@
 .nmls{
     font-size: 25px;
     font-weight: 900;
-    color: #fff;
+    color: #00acee;
 }
 .contact-info{
     margin-top: 10px;
@@ -128,7 +128,7 @@
     font-size: 14px;
     font-weight: 700;
     text-align: center;
-    background: #55A630;
+    background: #90EE90;
     color: #000;
     padding-bottom: 10px;
 }
