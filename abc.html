@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Affordability Calculator</title>
+</head>
+
+<body>
+    <h1>Affordability Calculator</h1>
+    <form>
+        <label for="annualIncome">Annual Gross Income:</label>
+        <input type="number" id="annualIncome" name="annualIncome"><br><br>
+        <label for="maxDTI">Maximum DTI Allowed:</label>
+        <input type="number" step="0.01" id="maxDTI" name="maxDTI"><br><br>
+        <label for="monthlyDebtPayment">Monthly Debt Payment:</label>
+        <input type="number" id="monthlyDebtPayment" name="monthlyDebtPayment"><br><br>
+        <label for="downPayment">Down Payment:</label>
+        <input type="number" id="downPayment" name="downPayment">
+        <select id="downPaymentType" name="downPaymentType">
+            <option value="percent">%</option>
+            <option value="dollar">$</option>
+        </select><br><br>
+        <label for="loanTerm">Loan Term (in years):</label>
+        <input type="number" id="loanTerm" name="loanTerm"><br><br>
+        <label for="interestRate">Interest Rate:</label>
+        <input type="number" step="0.01" id="interestRate" name="interestRate"><br><br>
+        <label for="tax">Tax:</label>
+        <input type="number" id="tax" name="tax"><br><br>
+        <label for="insurance">Insurance:</label>
+        <input type="number" id="insurance" name="insurance"><br><br>
+        <label for="hoa">HOA:</label>
+        <input type="number" id="hoa" name="hoa"><br><br>
+        <label for="other">Other:</label>
+        <input type="number" id="other" name="other"><br><br>
+        <button type="button" onclick="calculateAffordability()">Calculate Affordability</button>
+    </form>
+    <p id="maxHomeValue"></p>
+    <p id="principalAndInterest"></p>
+    <p id="totalHousingPayment"></p>
+</body>
+
+</html>
+<script>
+    function calculateAffordability() {
+        var annualIncome = document.getElementById("annualIncome").value;
+        var maxDTI = document.getElementById("maxDTI").value;
+        var monthlyDebtPayment = document.getElementById("monthlyDebtPayment").value;
+        var downPayment = document.getElementById("downPayment").value;
+        var downPaymentType = document.getElementById("downPaymentType").value;
+        var loanTerm = document.getElementById("loanTerm").value;
+        var interestRate = document.getElementById("interestRate").value;
+        var tax = document.getElementById("tax").value;
+        var insurance = document.getElementById("insurance").value;
+        var hoa = document.getElementById("hoa").value;
+        var other = document.getElementById("other").value;
+
+        var downPaymentAmount = 0;
+        if (downPaymentType === "percent") {
+            downPaymentAmount = downPayment / 100 * (annualIncome / 12);
+        } else if (downPaymentType === "dollar") {
+            downPaymentAmount = downPayment
+        }
+
+        // calculate maximum housing payment based on DTI
+        var maxHousingPayment = annualIncome / 12 * maxDTI - monthlyDebtPayment;
+
+        // calculate maximum home value based on down payment and loan term
+        var principal = (maxHousingPayment - tax - insurance - hoa - other) / (1 + (interestRate / 1200)) / (1 - Math.pow((1 + (interestRate / 1200)), -loanTerm * 12));
+        var maxHomeValue = principal + downPaymentAmount;
+
+        // display results
+        document.getElementById("maxHomeValue").innerHTML = "Maximum Home Value: $" + maxHomeValue;
+        document.getElementById("principalAndInterest").innerHTML = "Principal & Interest: $" + principal;
+        document.getElementById("totalHousingPayment").innerHTML = "Total Housing Payment: $" + (maxHousingPayment + tax + insurance + hoa + other);
+    }
+</script>
