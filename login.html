@@ -11,7 +11,6 @@
             padding: 0;
             text-decoration: none;
             box-sizing: border-box;
-            font-family: 'Work Sans', sans-serif;
         }
 
         .bg-login-reg {
@@ -88,7 +87,7 @@
 
         .login-user-details .login-input-box .login-input:focus,
         .login-user-details .login-input-box .login-input:valid {
-            border-color: #F7A76C;
+            border: 2px solid #F7A76C;
         }
 
         .login-form .login-buttons .login-button {
@@ -207,7 +206,7 @@
 </html>
 <script>
     function showPassword() {
-        var Pass = document.getElementById("pass");
+        let Pass = document.getElementById("pass");
         if (Pass.type === "password") {
             Pass.type = "text";
         }

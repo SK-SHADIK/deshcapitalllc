@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+
+    .bg-login-reg {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: #90EE90;
+    }
+
+    .login-container {
+      width: 700px;
+      background: #0000009f;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .login-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      width: 120px;
+      margin: 0 auto;
+    }
+
+    .login-logo img {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .login-container .login-title {
+      font-size: 25px;
+      font-weight: 700;
+      color: #fff;
+      position: relative;
+    }
+
+    .login-container .login-title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 80px;
+      border-radius: 5px;
+      background: linear-gradient(135deg, #F7A76C, #90EE90);
+    }
+
+    .reg-form .reg-user-details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px 0 12px 0;
+    }
+
+    form .reg-user-details .login-input-box {
+      margin-bottom: 15px;
+      width: calc(100% / 2 - 20px);
+    }
+
+    .reg-form .login-input-box .details {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .reg-user-details .login-input-box .reg-input,
+    select {
+      height: 40px;
+      width: 100%;
+      outline: none;
+      font-size: 16px;
+      letter-spacing: 1px;
+      border: 2px solid #90ee90a9;
+      border-radius: 5px;
+      padding-left: 15px;
+      background: #00000051;
+      color: #fff;
+      transition: all 0.3s ease;
+      margin-bottom: 10px;
+    }
+
+    .reg-user-details .login-input-box .reg-input:focus,
+    .reg-user-details .login-input-box .reg-input:valid {
+      border-color: 2px solid #F7A76C;
+    }
+
+    .reg-form .login-buttons .login-button {
+      height: 45px;
+      width: 99%;
+      border-radius: 10px;
+      border: none;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background: #F7A76C;
+      margin: 10px;
+    }
+
+    .reg-form .login-buttons .login-button:hover {
+      background: #90EE90;
+      color: #000;
+      border-radius: 5px;
+    }
+
+    .login-text {
+      margin-left: 10px;
+      color: #fff;
+    }
+
+    .login-link a {
+      color: #F7A76C;
+    }
+
+    .login-checkbox {
+      margin: 10px;
+      accent-color: #F7A76C;
+    }
+
+    .login-show-pass {
+      color: #F7A76C;
+      font-weight: 700;
+    }
+
+    @media(max-width: 584px) {
+      .login-container {
+        max-width: 100%;
+      }
+
+      .reg-form .reg-user-details .login-input-box,
+      .login-buttons {
+        margin-bottom: 15px;
+        width: 95%;
+      }
+
+      .reg-form .category {
+        width: 100%;
+      }
+
+      .reg-form .reg-user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+      }
+
+      .reg-user-details::-webkit-scrollbar {
+        width: 5px;
+      }
+    }
+
+    @media(max-width: 459px) {
+      .login-container .category {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+  <body class="bg-login-reg">
+    <div class="login-container">
+      <div class="login-logo">
+        <a href="index.html"><img src="Assets/Images/Logo.jpg" alt="Loading..."></a>
+      </div>
+      <div class="login-title">Create Account</div>
+      <form action="#" class="reg-form">
+        <div class="reg-user-details">
+          <div class="login-input-box">
+            <label for="first_name" class="details">First Name</label>
+            <input class="reg-input" type="text" name="name" placeholder="Enter your first name" required>
+          </div>
+          <div class="login-input-box">
+            <label for="last_name" class="details">Last Name</label>
+            <input class="reg-input" type="text" name="name" placeholder="Enter your last name" required>
+          </div>
+          <div class="login-input-box">
+            <label for="email" class="details">Email</label>
+            <input class="reg-input" type="text" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="login-input-box">
+            <label for="contact_number" class="details">Contact Number</label>
+            <input class="reg-input" type="text" name="phn" placeholder="Enter your contact number" required>
+          </div>
+          <div class="login-input-box">
+            <label for="password" class="details">Password</label>
+            <input class="reg-input" type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <div class="login-input-box">
+            <label for="confirm_password" class="details">Confirm Password</label>
+            <input class="reg-input" type="password" id="confirm_password" name="confirm_password" placeholder="Enter password again" required>
+          </div>
+          <div class="login-input-box">
+            <label for="address" class="details">Address</label>
+            <input class="reg-input" type="text" name="address" placeholder="Enter your address" required>
+          </div>
+          <div class="login-input-box">
+            <label for="register_as" class="details">Register As</label>
+            <select id="registerAsSelect">
+              <option value="">Select One</option>
+              <option value="Client">Client</option>
+              <option value="Loan_Officer">Loan Officer</option>
+            </select>
+          </div>
+          <div class="login-input-box" id="nmlsField" style="display: none;">
+            <label for="nmls" class="details">NMLS</label>
+            <input class="reg-input" type="text" name="nmls" placeholder="Enter your nmls" required>
+          </div>
+        </div>
+        <input type="checkbox" class="login-checkbox" onClick="showPassword()" /><span class="login-show-pass">Show
+          Password</span>
+        <div class="login-buttons">
+          <button class="login-button">Regester</button>
+        </div>
+      </form>
+      <p class="login-text">Already Have An Account <span class="login-link"><a href="login.html">Login</a></span>
+      </p>
+    </div>
+  </body>
+
+</html>
+<script>
+  let registerAsSelect = document.getElementById("registerAsSelect");
+  let nmlsField = document.getElementById("nmlsField");
+
+  registerAsSelect.addEventListener("change", () => {
+    if (registerAsSelect.value === "Loan_Officer") {
+      nmlsField.style.display = "block";
+    } else {
+      nmlsField.style.display = "none";
+    }
+  });
+
+  function showPassword() {
+    let password = document.getElementById("password");
+    let confirm_password = document.getElementById("confirm_password");
+
+    if (password.type === "password") {
+      password.type = "text";
+      confirm_password.type = "text";
+    } else {
+      password.type = "password";
+      confirm_password.type = "password";
+    }
+  }
+
+</script>
