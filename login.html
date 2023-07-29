@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .bg-login-reg {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: #90EE90;
+        }
+
+        .login-container {
+            width: 700px;
+            background: #0000009f;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .login-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            width: 120px;
+            margin: 0 auto;
+        }
+
+        .login-logo img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .login-container .login-title {
+            font-size: 25px;
+            font-weight: 700;
+            color: #fff;
+            position: relative;
+        }
+
+        .login-container .login-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 60px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #F7A76C, #90EE90);
+        }
+
+        .login-form .login-user-details .login-input-box {
+            margin-left: 10px;
+            margin-top: 20px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .login-user-details .login-input-box .login-input {
+            height: 40px;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            letter-spacing: 1px;
+            border: 2px solid #90ee90a9;
+            border-radius: 5px;
+            padding-left: 15px;
+            background: #00000051;
+            color: #fff;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .login-user-details .login-input-box .login-input:focus,
+        .login-user-details .login-input-box .login-input:valid {
+            border-color: #F7A76C;
+        }
+
+        .login-form .login-buttons .login-button {
+            height: 45px;
+            width: 99%;
+            border-radius: 10px;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #F7A76C;
+            margin: 10px;
+        }
+
+        .login-form .login-buttons .login-button:hover {
+            background: #90EE90;
+            color: #000;
+            border-radius: 5px;
+        }
+
+        .login-sh-fp {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .login-checkbox {
+            margin: 10px;
+            accent-color: #F7A76C;
+        }
+
+        .login-show-pass {
+            color: #F7A76C;
+            font-weight: 700;
+        }
+
+        .pass_link a {
+            margin: 10px;
+            text-decoration: underline;
+            color: #F7A76C;
+            font-weight: 700;
+        }
+
+        .reg-text {
+            margin-left: 10px;
+            color: #fff;
+        }
+
+        .reg-link a {
+            color: #F7A76C;
+        }
+
+        @media(max-width: 660px) {
+            .login-container {
+                max-width: 100%;
+            }
+
+            .login-form .login-user-details .login-input-box,
+            .login-buttons {
+                margin-bottom: 15px;
+                width: 95%;
+            }
+
+            .login-form .login-user-details {
+                max-height: 300px;
+                overflow-y: scroll;
+            }
+        }
+        @media(max-width: 480px) {
+            .login-sh-fp{
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <body class="bg-login-reg">
+        <div class="login-container">
+            <div class="login-logo">
+                <a href="index.html"><img src="Assets/Images/Logo.jpg" alt="Loading..."></a>
+            </div>
+            <div class="login-title">LOGIN</div>
+            <form action="#" class="login-form">
+                <div class="login-user-details">
+                    <div class="login-input-box">
+                        <label class="login-details">Email</label>
+                        <input class="login-input" type="text" name="email" placeholder="Enter Email" required>
+                    </div>
+                    <div class="login-input-box">
+                        <label class="login-details">Password</label>
+                        <input class="login-input" type="password" id="pass" name="pass" placeholder="Enter A Password"
+                            required>
+                    </div>
+                    <div class="login-sh-fp">
+                        <div>
+                            <input type="checkbox" class="login-checkbox" onClick="showPassword()" /><span
+                                class="login-show-pass">Show Password</span>
+                        </div>
+                        <div class="pass_link"><a href="#">Forgot password?</a></div>
+                    </div>
+                </div>
+
+
+                <div class="login-buttons">
+                    <button class="login-button">Login</button>
+                </div>
+            </form>
+
+            <p class="reg-text">Don't Have An Account <span class="reg-link"><a href="">Regester Now</a></span>
+            </p>
+        </div>
+    </body>
+
+</html>
+<script>
+    function showPassword() {
+        var Pass = document.getElementById("pass");
+        if (Pass.type === "password") {
+            Pass.type = "text";
+        }
+        else {
+            Pass.type = "password";
+        }
+    }
+</script>
