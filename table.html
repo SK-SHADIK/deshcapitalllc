@@ -1,0 +1,153 @@
+<!-- <style>
+            .table-title {
+                border-collapse: collapse;
+                width: 100%;
+                
+            }
+
+            .table-title .table-header,
+            .table-title .table-data {
+                padding: 8px;
+            }
+
+            .table-title .table-row:nth-child(even) {
+                background: #0000002f;
+            }
+
+            .table-title .table-row:hover {
+                background-color: #0000005f;
+            }
+
+            .table-title .table-header {
+                background: #F7A76C;
+                color: #000;
+                border-bottom: 2px solid #000;
+            }
+            @media (max-width: 980px) {
+                .table-title {
+                    overflow-x: auto; /* Change to 'scroll' if you want the scrollbar to always appear */
+                }
+            } -->
+<!-- </style> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Table</title>
+    </head>
+    <style>
+        .table-container {
+            overflow-x: auto;
+            width: 100%;
+            border-collapse: collapse;
+            color: #000;
+            text-align: center;
+            border: 2px solid #000;
+            font-size: 16px;
+        }
+        .table-container .table-header {
+            background: #F7A76C;
+            color: #000;
+            border-bottom: 2px solid #000;
+        }
+
+        .table-container .table-header,
+        .table-container .table-data {
+            padding: 8px;
+        }
+
+        .table-container .table-row:nth-child(even) {
+            background: #0000002f;
+        }
+
+        .table-container .table-row:hover {
+            background-color: #0000005f;
+        }
+
+        
+
+        @media only screen and (max-width: 768px) {
+            .table-container {
+                border-collapse: separate;
+                border-spacing: 0;
+                overflow-x: auto;
+                width: 100%;
+            }
+
+            .table-header,
+            .table-data {
+                white-space: nowrap;
+                min-width: 100px;
+
+            }
+        }
+    </style>
+
+    <body>
+        <table class="table-container">
+            <thead>
+                <tr>
+                    <th class="table-header">Name</th>
+                    <th class="table-header">Age</th>
+                    <th class="table-header">Email</th>
+                    <th class="table-header">Name</th>
+                    <th class="table-header">Age</th>
+                    <th class="table-header">Email</th>
+                    <th class="table-header">Name</th>
+                    <th class="table-header">Age</th>
+                    <th class="table-header">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-row">
+                    <td class="table-data">John Doe</td>
+                    <td class="table-data">30</td>
+                    <td class="table-data">john@example.com</td>
+                    <td class="table-data">John Doe</td>
+                    <td class="table-data">30</td>
+                    <td class="table-data">john@example.com</td>
+                    <td class="table-data">John Doe</td>
+                    <td class="table-data">30</td>
+                    <td class="table-data">john@example.com</td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-data">John Doe</td>
+                    <td class="table-data">30</td>
+                    <td class="table-data">john@example.com</td>
+                    <td class="table-data">John Doe</td>
+                    <td class="table-data">30</td>
+                    <td class="table-data">john@example.com</td>
+                    <td class="table-data">John Doe</td>
+                    <td class="table-data">30</td>
+                    <td class="table-data">john@example.com</td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-data">John Doe</td>
+                    <td class="table-data">30</td>
+                    <td class="table-data">john@example.com</td>
+                    <td class="table-data">John Doe</td>
+                    <td class="table-data">30</td>
+                    <td class="table-data">john@example.com</td>
+                    <td class="table-data">John Doe</td>
+                    <td class="table-data">30</td>
+                    <td class="table-data">john@example.com</td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-data">John Doe</td>
+                    <td class="table-data">30</td>
+                    <td class="table-data">john@example.com</td>
+                    <td class="table-data">John Doe</td>
+                    <td class="table-data">30</td>
+                    <td class="table-data">john@example.com</td>
+                    <td class="table-data">John Doe</td>
+                    <td class="table-data">30</td>
+                    <td class="table-data">john@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+</html>
