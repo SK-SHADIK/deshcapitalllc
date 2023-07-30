@@ -192,7 +192,8 @@
           </div>
           <div class="login-input-box">
             <label for="contact_number" class="details">Contact Number</label>
-            <input class="reg-input" type="text" name="phn" placeholder="Enter your contact number" required>
+            <input class="reg-input" type="text" name="phn" oninput="validateOTP(this)"
+              placeholder="Enter your contact number" required>
           </div>
           <div class="login-input-box">
             <label for="password" class="details">Password</label>
@@ -256,6 +257,9 @@
       password.type = "password";
       confirm_password.type = "password";
     }
+  }
+  function validateOTP(input) {
+    input.value = input.value.replace(/[^0-9]/, '');
   }
 
 </script>
