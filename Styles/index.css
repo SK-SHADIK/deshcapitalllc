@@ -348,6 +348,56 @@ sub{
 }
 
 
+/* ------------------------- Mortgage Section ------------------------- */
+.index-mortgage-sections{
+    width: 100%;
+    height: 200px;
+    background: #f2d535;
+    text-align: center;
+}
+.index-mortgage-title{
+    font-size: 30px;
+    font-weight: 900;
+    color: #000;
+    padding-top: 20px;
+}
+.index-mortgage-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.index-mortgage-header{
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.index-mortgage-button{
+    color: #000;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.index-mortgage-button:hover{
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+@media screen and  (max-width: 480px) {
+    .index-mortgage-sections{
+        height: 300px;
+    }
+    .index-mortgage-section{
+        flex-direction: column;
+    }
+    .for-bangla{
+        margin-top: 30px;
+    }
+}
 /* ------------------------- Feedbacks ------------------------- */
 
 .feedbacks{
