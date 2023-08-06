@@ -39,11 +39,19 @@
     font-weight: 900;
     text-align: center;
     color: #00B2FF;
+    display: flex;
+    align-items: center;
 }
-hr{
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+.document-lists-title::before,
+.document-lists-title::after {
+    flex: 1;
+    content: '';
+    padding: 1px;
+    background-color: #00B2FF;
+    margin: 5px;
 }
+
 .document-list{
     background-image: url("../Assets/Images/LogoTrans.png");
     background-repeat: no-repeat;

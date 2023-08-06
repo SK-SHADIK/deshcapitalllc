@@ -27,10 +27,17 @@
     font-size: 30px;
     font-weight: 900;
     color: #00B2FF;
+    display: flex;
+    align-items: center;
 }
-hr{
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+.mortgages-title::before,
+.mortgages-title::after {
+    flex: 1;
+    content: '';
+    padding: 1px;
+    background-color: #00B2FF;
+    margin: 5px;
 }
 .mortgage-header{
     color: #FF5E76;

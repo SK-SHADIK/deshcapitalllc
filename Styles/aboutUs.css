@@ -37,10 +37,7 @@
     align-items: center;
     gap: 20px;
 }
-hr{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+
 .aboutus{
     margin: 30px;
 }
@@ -49,6 +46,17 @@ hr{
     font-size: 30px;
     font-weight: 900;
     color: #00B2FF;
+    display: flex;
+    align-items: center;
+}
+
+.aboutus-team-title::before,
+.aboutus-team-title::after {
+    flex: 1;
+    content: '';
+    padding: 1px;
+    background-color: #00B2FF;
+    margin: 5px;
 }
 .aboutus-text{
     margin: 20px;
