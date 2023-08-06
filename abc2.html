@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Slideshow container */
+    .slideshow-container {
+      position: relative;
+      max-width: 60%;
+      margin: 0 auto;
+    }
+
+    /* Slides */
+    .mySlides {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .mySlides::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #90ee909c;
+    z-index: 0;
+  }
+    .mySlides img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Quote */
+    q {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-style: italic;
+      z-index: 1;
+      padding: 10px;
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    /* Author */
+    p.author {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      color: cornflowerblue;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px;
+      margin: 0;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 16px;
+      color: #888;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      position: absolute;
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+    }
+    @media screen and (max-width: 980px) {
+        .slideshow-container {
+            max-width: 100%;
+        }
+        q{
+            font-size: 20px;
+        }
+        
+    }
+    @media screen and (max-width: 680px) {
+        q{
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        q{
+            font-size: 10px;
+        }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides">
+      <img src="Assets/Images/Feedback.png" alt="Loading...">
+      <q>The staff at Desh Capital LLC gave me exceptional customer service throughout the whole mortgage application process. They were constantly available to respond to my queries and address any issues I could have. </q>
+      <p class="author">- Olivia</p>
+    </div>
+
+    <div class="mySlides">
+      <img src="Assets/Images/Feedback.png" alt="Loading...">
+      <q>Desh Capital LLC handled the mortgage application procedure professionally, and I was able to submit my application without any delays.</q>
+      <p class="author">- Lucas</p>
+    </div>
+
+    <div class="mySlides">
+      <img src="Assets/Images/Feedback.png" alt="Loading...">
+      <q>I was able to save money over time since Desh Capital LLC provided rates that were more affordable than those I could find elsewhere.</q>
+      <p class="author">- Thomas</p>
+    </div>
+
+    <div class="mySlides">
+      <img src="Assets/Images/Feedback.png" alt="Loading...">
+      <q>Every step of the mortgage process was explained to me by Desh Capital LLC, and they were open and honest about all the costs and expenses related to the loan.</q>
+      <p class="author">- Sg</p>
+    </div>
+
+    <div class="mySlides">
+      <img src="Assets/Images/Feedback.png" alt="Loading...">
+      <q>The Desh Capital LLC team impressed me with their professionalism by treating me with respect and courtesy at all times.</q>
+      <p class="author">- Emma</p>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides();
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      if (slideIndex < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+      slideIndex++;
+      setTimeout(showSlides, 5000);
+    }
+  </script>
+
+</body>
+
+</html>

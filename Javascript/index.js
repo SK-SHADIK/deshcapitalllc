@@ -22,53 +22,52 @@ function NextCard() {
 setInterval(NextCard, intervalTime);
 
 // ------------- SLIDER -----------------
-let menualslideIndex = 1;
-menualShowSlides(menualslideIndex);
+// Add your JavaScript code here
+
+const sliders = document.querySelector('.sliders .slider');
+const slideBoxes = sliders.querySelectorAll('.slide-box');
+const roundedBtns = sliders.querySelectorAll('.rounded_btn');
+let manualSlideIndex = 0;
+
+function showSlide(index) {
+    if (index >= slideBoxes.length) {
+        manualSlideIndex = 0;
+    } else if (index < 0) {
+        manualSlideIndex = slideBoxes.length - 1;
+    }
+
+    slideBoxes.forEach((box, i) => {
+        box.style.display = i === manualSlideIndex ? 'block' : 'none';
+    });
+
+    roundedBtns.forEach((btn, i) => {
+        btn.classList.toggle('active', i === manualSlideIndex);
+    });
+}
 
 function plusSlides(n) {
-    menualShowSlides(menualslideIndex += n);
+    manualSlideIndex += n;
+    showSlide(manualSlideIndex);
 }
 
 function currentSlide(n) {
-    menualShowSlides(menualslideIndex = n);
+    manualSlideIndex = n - 1;
+    showSlide(manualSlideIndex);
 }
 
-let automenualslideIndex = 0;
-autoShowSlides();
+document.getElementById('prevBtn').addEventListener('click', () => plusSlides(-1));
+document.getElementById('nextBtn').addEventListener('click', () => plusSlides(1));
 
+roundedBtns.forEach((btn, i) => {
+    btn.addEventListener('click', () => currentSlide(i + 1));
+});
 
-
-function menualShowSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("slide-box");
-    let rounded_btns = document.getElementsByClassName("rounded_btn");
-    if (n > slides.length) { menualslideIndex = 1 }
-    if (n < 1) { menualslideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < rounded_btns.length; i++) {
-        rounded_btns[i].className = rounded_btns[i].className.replace(" active", "");
-    }
-    slides[menualslideIndex - 1].style.display = "block";
-    rounded_btns[menualslideIndex - 1].className += " active";
-}
 function autoShowSlides() {
-    let i;
-    let slides = document.getElementsByClassName("slide-box");
-    let rounded_btns = document.getElementsByClassName("rounded_btn");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    automenualslideIndex++;
-    if (automenualslideIndex > slides.length) { automenualslideIndex = 1 }
-    for (i = 0; i < rounded_btns.length; i++) {
-        rounded_btns[i].className = rounded_btns[i].className.replace(" active", "");
-    }
-    slides[automenualslideIndex - 1].style.display = "block";
-    rounded_btns[automenualslideIndex - 1].className += " active";
+    plusSlides(1);
     setTimeout(autoShowSlides, 5000);
 }
+
+autoShowSlides();
 
 // Ratings & Years Of Experience
 
