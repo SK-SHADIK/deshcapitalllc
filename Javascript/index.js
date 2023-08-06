@@ -1,28 +1,23 @@
 // ------------- TODAYS MORTGAGE RATE CARD SLIDER -----------------
-let intervalTime = 5000;
-
-let SlideContainer = document.querySelector('.slider-container');
-let SlideCards = document.querySelectorAll('.slide-card');
+const intervalTime = 5000;
+const slideContainer = document.querySelector('.slider-container');
+const slideCards = document.querySelectorAll('.slide-card');
 
 let currentIndex = 0;
 
-function NextCard() {
-    currentIndex++;
+function nextCard() {
+    currentIndex = (currentIndex + 1) % slideCards.length;
 
-    if (currentIndex >= SlideCards.length) {
-        currentIndex = 0;
-    }
-
-    SlideContainer.scrollTo({
-        left: SlideCards[currentIndex].offsetLeft,
+    slideContainer.scrollTo({
+        left: slideCards[currentIndex].offsetLeft,
         behavior: 'smooth'
     });
 }
 
-setInterval(NextCard, intervalTime);
+setInterval(nextCard, intervalTime);
+
 
 // ------------- SLIDER -----------------
-// Add your JavaScript code here
 
 const sliders = document.querySelector('.sliders .slider');
 const slideBoxes = sliders.querySelectorAll('.slide-box');
