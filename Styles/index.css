@@ -448,7 +448,7 @@ sub {
 
 @media screen and (max-width: 480px) {
     .index-document-sections {
-        height: 300px;
+        height: 400px;
     }
 
     .index-document-section {
@@ -587,5 +587,14 @@ sub {
 @media screen and (max-width: 480px) {
     .feedback-quotes {
         font-size: 10px;
+    }
+    .feedback-author {
+        padding: 5px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 300px) {
+    .feedback-quotes {
+        font-size: 6px;
     }
 }
