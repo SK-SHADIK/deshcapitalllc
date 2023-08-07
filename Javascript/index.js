@@ -98,3 +98,32 @@ window.addEventListener('scroll', () => {
         countToFourDotFive();
     }
 });
+
+// Feedback Section
+let feedbackSlideIndex = 1;
+feedbackShowSlides();
+
+function feedbackPlusSlides(n) {
+    feedbackShowSlides(feedbackSlideIndex += n);
+}
+
+function currentSlide(n) {
+    feedbackShowSlides(feedbackSlideIndex = n);
+}
+
+function feedbackShowSlides() {
+    let i;
+    let feedbackSlides = document.getElementsByClassName("feedback-slides");
+    if (feedbackSlideIndex > feedbackSlides.length) {
+        feedbackSlideIndex = 1
+    }
+    if (feedbackSlideIndex < 1) {
+        feedbackSlideIndex = feedbackSlides.length
+    }
+    for (i = 0; i < feedbackSlides.length; i++) {
+        feedbackSlides[i].style.display = "none";
+    }
+    feedbackSlides[feedbackSlideIndex - 1].style.display = "block";
+    feedbackSlideIndex++;
+    setTimeout(feedbackShowSlides, 5000);
+}
