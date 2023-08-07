@@ -446,7 +446,7 @@ sub {
     border-radius: 5px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
     .index-document-sections {
         height: 400px;
     }
