@@ -103,7 +103,7 @@
     }
     
     .logo-text {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 900;
         color: #000;
     }
@@ -254,7 +254,8 @@
             max-height: 0px;
             overflow: hidden;
         }
-        .list #hrader-sub-title:checked~ul {
+        .list #hrader-sub-title:checked~ul, 
+        .list #hrader-sub-title2:checked~ul {
             max-height: 100vh;
         }
         .list ul li {
