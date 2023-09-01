@@ -67,7 +67,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #f2d535;
+    border: 3px solid #87cefa;
 }
 
 .tm-title {
@@ -405,7 +405,7 @@ sub {
 .index-document-sections {
     width: 100%;
     height: 200px;
-    background: #f2d535;
+    background: #87cefa;
     text-align: center;
 }
 
